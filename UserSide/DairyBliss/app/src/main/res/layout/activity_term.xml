@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_secondary"
+    tools:context=".activity.TermActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_secondary"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_secondary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms and Conditions"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/color_primary"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/textViewTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/color_primary"
+                android:lineSpacingExtra="6dp"
+                android:text="Welcome to Dairybliss!
+
+Please read the following Terms and Conditions carefully before using our app.
+
+1. Acceptance of Terms:
+By accessing or using Dairybliss, you agree to be bound by these Terms and Conditions and our Privacy Policy.
+
+2. Services:
+Dairybliss provides an online platform for users to browse, purchase, and receive dairy products through our delivery network.
+
+3. User Accounts:
+You are responsible for maintaining the confidentiality of your account credentials. Any activity under your account is your responsibility.
+
+4. Orders and Payments:
+All orders are subject to availability and confirmation. Prices may change without notice. Payments must be made via approved methods.
+
+5. Delivery:
+We aim to deliver products on time, but delays may occur due to unforeseen circumstances. We are not liable for any late deliveries.
+
+6. Returns and Refunds:
+Products once delivered cannot be returned unless damaged or incorrect. Refunds will be issued after verification.
+
+7. Prohibited Use:
+You agree not to misuse the app or attempt unauthorized access to our systems.
+
+8. Modifications:
+We reserve the right to modify or terminate the app or these terms at any time.
+
+9. Contact:
+For any questions, reach us at support@dairybliss.com or call +91-9876543210.
+
+By continuing to use the app, you accept these terms in full." />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

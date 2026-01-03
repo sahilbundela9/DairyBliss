@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_secondary"
+    android:id="@+id/main"
+    tools:context=".activity.Product_Detail_Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- ScrollView wraps entire content except for the bottom layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/arBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="18dp"
+                    android:paddingStart="10dp"
+                    android:src="@drawable/baseline_arrow_back_24" />
+
+
+                <TextView
+                    android:id="@+id/productDetail"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/alata"
+                    android:text="Product Details"
+                    android:textColor="@color/color_primary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Product Image Slider -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginTop="5dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_bg"> <!-- Set rounded background -->
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/pImg"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:iss_auto_cycle="true"
+                    app:iss_corner_radius="50"
+                    app:iss_delay="1000"
+                    app:iss_no_dots="false"
+                    app:iss_unselected_dot="@color/color_primary"
+                    app:iss_period="4000" />
+
+            </LinearLayout>
+
+
+            <!-- Product Details -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"> <!-- Support for older Android versions -->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="8dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                <!-- Product Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Title"
+                    android:fontFamily="@font/alata"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_primary"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvPtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Title"
+                    android:fontFamily="@font/alata"
+                    android:textSize="13sp"
+                    android:textColor="@color/color_primary"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <!-- Description -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:fontFamily="@font/alata"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_primary"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvPdesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:fontFamily="@font/alata"
+                    android:textSize="13sp"
+                    android:textColor="@color/color_primary"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView android:text="Price" android:fontFamily="@font/alata"
+                    android:textColor="@color/color_primary" android:textSize="16sp"
+                    android:textStyle="bold" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="10dp"
+                        android:gravity="start">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_primary"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:id="@+id/tvPprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_primary"
+                            android:textSize="13sp"
+                            android:layout_marginStart="4dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/-"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_primary"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+
+                <TextView android:text="Discount" android:fontFamily="@font/alata"
+                    android:textColor="@color/color_primary" android:textSize="16sp"
+                    android:textStyle="bold" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView android:id="@+id/tvPdis" android:fontFamily="@font/alata"
+                    android:textColor="@color/color_primary" android:text="Discount"
+                    android:textSize="13sp" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView android:text="Shelf Life" android:fontFamily="@font/alata"
+                    android:textColor="@color/color_primary" android:textSize="16sp"
+                    android:textStyle="bold" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView android:id="@+id/tvPslife" android:fontFamily="@font/alata"
+                    android:textColor="@color/color_primary" android:text="Shelf Life"
+                    android:textSize="13sp" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView android:text="Brand Name" android:fontFamily="@font/alata"
+                    android:textColor="@color/color_primary" android:textSize="16sp"
+                    android:textStyle="bold" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView android:id="@+id/tvPbrand" android:fontFamily="@font/alata"
+                    android:textColor="@color/color_primary" android:text="Brand Name"
+                    android:textSize="13sp" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView android:text="Weight" android:fontFamily="@font/alata"
+                    android:textColor="@color/color_primary" android:textSize="16sp"
+                    android:textStyle="bold" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView android:id="@+id/tvPweight" android:fontFamily="@font/alata"
+                    android:textColor="@color/color_primary" android:text="Weight"
+                    android:textSize="13sp" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView android:text="Category" android:fontFamily="@font/alata"
+                    android:textColor="@color/color_primary" android:textSize="16sp"
+                    android:textStyle="bold" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView android:id="@+id/tvPcategory" android:fontFamily="@font/alata"
+                    android:textColor="@color/color_primary" android:text="Category"
+                    android:textSize="13sp" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView android:text="Popular" android:fontFamily="@font/alata"
+                    android:textColor="@color/color_primary" android:textSize="16sp"
+                    android:textStyle="bold" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView android:id="@+id/tvPpopular" android:fontFamily="@font/alata"
+                    android:textColor="@color/color_primary" android:text="Popular"
+                    android:textSize="13sp" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Fixed Section for Price and Add to Cart Button -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#F6F3F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <Button
+            android:id="@+id/btnAddtoCart"
+            android:layout_width="189dp"
+            android:layout_height="51dp"
+            android:backgroundTint="@color/color_primary"
+            android:text="Add to Cart"
+            android:textAllCaps="false"
+            android:textColor="@color/color_secondary"
+            android:textSize="16dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

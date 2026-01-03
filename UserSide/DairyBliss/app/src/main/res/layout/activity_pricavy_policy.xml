@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/color_secondary"
+    tools:context=".activity.PricavyPolicyActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_secondary"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_secondary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_primary"
+                android:fontFamily="@font/alata"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/textViewPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/color_primary"
+                android:fontFamily="@font/alata"
+                android:lineSpacingExtra="6dp"
+                android:text="At Dairybliss, your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information.
+
+1. Information We Collect:
+We collect basic user information such as name, phone number, address, email, and order history. This information helps us deliver products to your doorstep, manage your account, and provide personalized offers.
+
+2. How We Use Your Information:
+Your data is used solely for order fulfillment, customer support, and app improvements. We may send occasional promotional messages related to Dairybliss, but you can opt-out anytime.
+
+3. Data Sharing:
+We do not sell or rent your personal data. Your details may be shared with delivery partners solely for the purpose of completing your orders.
+
+4. Data Security:
+We use industry-standard encryption, secure servers, and limited-access databases to protect your information.
+
+5. Account Control:
+You may update or delete your account information at any time via the app. For permanent deletion, please contact our support team.
+
+6. Cookies and Tracking:
+Our app may use cookies or device identifiers to enhance user experience and understand app usage. No personal data is shared via these tools.
+
+7. Third-Party Services:
+Our app may contain links or integrations with third-party services (like payment gateways). We encourage you to review their privacy policies.
+
+8. Changes to This Policy:
+We may occasionally update this policy. Any changes will be communicated via the app or email.
+
+9. Contact Us:
+For any privacy-related questions or requests, please contact us at support@dairybliss.com or call +91-9876543210.
+
+By using Dairybliss, you consent to this Privacy Policy." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

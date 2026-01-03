@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_secondary"
+    android:gravity="center"
+    tools:context=".activity.HomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/color_primary"
+        android:background="@color/color_secondary">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:gravity="center">
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_below="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bnbHome">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="60dp"
+        app:labelVisibilityMode="labeled"
+        app:itemTextColor="@color/color_primary"
+        app:itemIconTint="@color/color_primary"
+        android:background="@color/color_secondary"
+        android:id="@+id/bnbHome"
+        app:menu="@menu/homepagemenu"
+        android:layout_alignParentBottom="true">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>

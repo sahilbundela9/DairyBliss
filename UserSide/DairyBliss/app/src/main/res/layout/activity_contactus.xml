@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_secondary"
+    tools:context=".activity.ContactusActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/color_secondary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/color_secondary"
+            android:gravity="center_horizontal">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/contactTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/color_primary"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Address -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📍 Address:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/color_primary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dairybliss HQ,\n123 Farm Lane,\nSurat, Gujarat - 395007"
+                android:textSize="15sp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/color_primary" />
+
+            <!-- Phone -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📞 Phone:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/color_primary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+91 98765 43210"
+                android:textSize="15sp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/color_primary" />
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✉️ Email:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/color_primary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="support@dairybliss.in"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/color_primary" />
+
+            <!-- Message Form -->
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Write your message..."
+                android:gravity="top"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/color_primary"
+                android:textColorHint="@color/color_primary"
+                android:layout_marginBottom="16dp"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/buttonSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Message"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+            <!-- Footer -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u00A9 2025 Dairybliss"
+                android:textSize="14sp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/color_primary"
+                android:layout_marginTop="24dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_secondary"
+    android:orientation="vertical"
+    tools:context=".activity.AboutActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/color_secondary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/rlogo"
+                android:contentDescription="Dairybliss Logo"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/aboutTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Dairybliss"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/color_primary"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/aboutDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dairybliss is a modern dairy delivery service dedicated to bringing you fresh, organic, and high-quality dairy products directly from farms to your doorstep. Established with a mission to promote health and wellness through natural nutrition, Dairybliss partners with trusted local dairy farmers to ensure every product is pure, chemical-free, and packed with goodness.\n\nWe offer a wide range of dairy products including fresh milk, ghee, paneer, curd, flavored milk, and more. Each product undergoes strict quality checks, hygienic packaging, and timely delivery to maintain freshness.\n\nOur user-friendly Android app makes ordering easy with features like daily subscriptions, one-time purchases, digital payments, order tracking, and customer support. Customers can also access exclusive discounts, coupons, and special offers through the app.\n\nAt Dairybliss, customer satisfaction and health come first. We are constantly innovating to bring better services, eco-friendly packaging, and an efficient supply chain to enhance your daily dairy experience.\n\nJoin the Dairybliss family and enjoy farm-fresh dairy delivered with care and commitment."
+                android:textSize="16sp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/color_primary"
+                android:lineSpacingExtra="6dp"
+                android:textAlignment="center" />
+
+            <!-- Footer -->
+            <TextView
+                android:id="@+id/aboutFooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u00A9 2025 Dairybliss. All rights reserved."
+                android:textSize="14sp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/color_primary"
+                android:layout_marginTop="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
